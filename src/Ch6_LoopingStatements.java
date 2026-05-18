@@ -40,6 +40,18 @@ public class Ch6_LoopingStatements {
             System.out.println("Count is: " + count);
             count++; // Increment to avoid infinite loop
         }
+        Scanner scanner = new Scanner(System.in);
+        boolean hasLearn  = false;
+        while (!hasLearn){
+            System.out.println("Go to school and learn agian!");
+            System.out.println("Have you learnt :");
+            int hasLearnStudent = scanner.nextInt();
+            if(hasLearnStudent == 1){
+                hasLearn = true;
+            }else{
+                hasLearn = false;
+            }
+        }
 
         // =====================================
         // Do-While Loop Example
